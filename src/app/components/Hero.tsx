@@ -17,7 +17,7 @@ export default function Hero() {
             transition={{ delay: 0.2 }}
             
           >
-            <Image src="/profile.jpg" alt="Profile" width={100} height={100} className="rounded-full mb-4 w-40 h-40 object-cover ring-1 ring-slate-400" />
+            <Image src="/portfolio/profile.jpg" alt="Profile" width={100} height={100} className="rounded-full mb-4 w-40 h-40 object-cover ring-1 ring-slate-400" />
           </motion.div>
           <motion.h1 
             className="text-4xl md:text-6xl font-bold mb-6 text-slate-400"
