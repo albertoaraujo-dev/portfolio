@@ -24,23 +24,25 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setStatus('loading')
+    setStatus('success')
+    setFormData({ name: '', email: '', message: '' })
 
-    try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      })
+    // try {
+    //   const response = await fetch('/api/contact', {
+    //     method: 'POST',
+    //     headers: {
+    //       'Content-Type': 'application/json',
+    //     },
+    //     body: JSON.stringify(formData),
+    //   })
 
-      if (!response.ok) throw new Error('Failed to send message')
+    //   if (!response.ok) throw new Error('Failed to send message')
       
-      setStatus('success')
-      setFormData({ name: '', email: '', message: '' })
-    } catch {
-      setStatus('error')
-    }
+    //   setStatus('success')
+    //   setFormData({ name: '', email: '', message: '' })
+    // } catch {
+    //   setStatus('error')
+    // }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
