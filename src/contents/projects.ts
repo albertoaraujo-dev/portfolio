@@ -1,0 +1,29 @@
+import { Project } from "@/types";
+
+
+export const projects: Project[] = [
+    {
+        title: 'Business Website',
+        description: 'Institutional website built with HTML, CSS and JavaScript',
+        technologies: ['HTML5', 'CSS3', 'JavaScript'],
+        githubLink: 'https://github.com/albertoaraujo-dev/stanna',
+        demoLink: 'https://www.stanna.com.br/',
+        image: '/projects/stanna.png',
+      },
+      {
+        title: 'E-commerce',
+        description: 'FrontEnd template using Jquery, CSS and HTML for CMS integration',
+        technologies: ['Jquery', 'HTML5', 'CSS3'],
+        githubLink: '/',
+        demoLink: 'https://www.danfinity.com.br/',
+        image: '/projects/danfinity.png',
+      },
+      {
+        title: 'Portfolio Website',
+        description: 'My personal portfolio website showcasing my projects and skills.',
+        technologies: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
+        githubLink: 'https://github.com',
+        demoLink: '/',
+        image: '/projects/portfolio.png',
+      },
+  ];
