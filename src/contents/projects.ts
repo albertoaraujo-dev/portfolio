@@ -23,7 +23,7 @@ export const projects: Project[] = [
         description: 'My personal portfolio website showcasing my projects and skills.',
         technologies: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
         githubLink: 'https://github.com/albertoaraujo-dev/portfolio',
-        demoLink: '/',
+        demoLink: '/portfolio',
         image: '/portfolio/projects/portfolio.png',
       },
   ];
