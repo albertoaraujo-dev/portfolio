@@ -66,7 +66,7 @@ export default function Hero() {
             </motion.a>
             <motion.a
               download={"AlbertoAraujo.pdf"}
-              href="/AlbertoAraujo.pdf"
+              href="/portfolio/AlbertoAraujo.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="text-2xl text-slate-500 hover:text-primary dark:text-slate-300 dark:hover:text-primary transition-colors"

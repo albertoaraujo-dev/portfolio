@@ -34,7 +34,7 @@ export default function Footer() {
             </a>
             <a
               download={"AlbertoAraujo.pdf"}
-              href="/AlbertoAraujo.pdf"
+              href="/portfolio/AlbertoAraujo.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="text-secondary hover:text-primary dark:text-slate-400 dark:hover:text-slate-100 transition-colors"
