@@ -26,4 +26,12 @@ export const projects: Project[] = [
         demoLink: '/portfolio',
         image: '/portfolio/projects/portfolio.png',
       },
+      {
+        title: 'Personal Site',
+        description: 'Personal website for a psychologist.',
+        technologies: ['HTML5', 'CSS3', 'JavaScript'],
+        githubLink: 'https://github.com/albertoaraujo-dev/sorayaoliveira',
+        demoLink: 'https://www.sorayaoliveira.com.br/',
+        image: '/portfolio/projects/soraya.png',
+      },
   ];

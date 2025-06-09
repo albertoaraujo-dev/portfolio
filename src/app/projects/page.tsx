@@ -40,7 +40,6 @@ export default function Projects() {
             {...cardHoverSmall}
           >
             <motion.div 
-              className="aspect-video bg-slate-200 dark:bg-slate-800"
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
