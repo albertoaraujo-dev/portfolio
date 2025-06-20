@@ -4,6 +4,7 @@ import { SunIcon, MoonIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/24/out
 import { useTheme } from '../context/ThemeContext'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useState } from 'react'
+import LanguageSwitcher from './LanguageSwitcher';
 
 export default function Navbar() {
   const { theme, toggleTheme } = useTheme();
@@ -30,6 +31,7 @@ export default function Navbar() {
           
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-1">
+            <LanguageSwitcher />
             {menuItems.map((item) => (
               <Link 
                 key={item.href}
@@ -79,6 +81,7 @@ export default function Navbar() {
               className="md:hidden"
             >
               <div className="py-4 space-y-4">
+                <LanguageSwitcher isMobile={true} />
                 {menuItems.map((item, index) => (
                   <motion.div
                     key={item.href}

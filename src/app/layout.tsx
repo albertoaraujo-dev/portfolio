@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "./context/ThemeContext";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import LanguageProvider from "./context/LanguageProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,11 +30,13 @@ export default function RootLayout({
     <html lang="en">
     <body className={`bg-slate-100 transition-colors dark:bg-slate-950 dark:text-slate-100 ${geistSans.variable} ${geistMono.variable}`}>
         <ThemeProvider>
-          <Navbar />
-          <main className="min-h-screen pt-24">
+            <LanguageProvider>
+            <Navbar />
+            <main className="min-h-screen pt-24">
             {children}
-          </main>
-          <Footer />
+            </main>
+            <Footer />
+          </LanguageProvider>
         </ThemeProvider>
       </body>
     </html>
