@@ -3,7 +3,7 @@ import { Project } from "@/types";
 
 export const projects: Project[] = [
     {
-        title: 'Business Website',
+        title: 'Engineering Company Website',
         description: 'Institutional website built with HTML, CSS and JavaScript',
         technologies: ['HTML5', 'CSS3', 'JavaScript'],
         githubLink: 'https://github.com/albertoaraujo-dev/stanna',
@@ -39,7 +39,7 @@ export const projects: Project[] = [
         isPrivateRepo: false,
       },
       {
-        title: 'Business Website',
+        title: 'Psychology Office Website',
         description: 'Institutional website built React and Styled Components',
         technologies: ['React', 'Styled Components', 'TypeScript'],
         githubLink: 'https://github.com/albertoaraujo-dev/aprimorecomportamental',
