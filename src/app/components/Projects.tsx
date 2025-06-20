@@ -82,7 +82,7 @@ export default function Projects() {
                     <FaGithub className="h-5 w-5" />
                     <motion.div className="text-secondary dark:text-slate-400 text-xs italic w-20">
                     <span >
-                        Repositório privado ao proprietário.
+                        Owner-private repository.
                     </span>
                     </motion.div>
                   </motion.div>
