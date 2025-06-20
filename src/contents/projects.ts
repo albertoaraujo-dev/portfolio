@@ -38,4 +38,13 @@ export const projects: Project[] = [
         image: '/portfolio/projects/soraya.png',
         isPrivateRepo: false,
       },
+      {
+        title: 'Business Website',
+        description: 'Institutional website built React and Styled Components',
+        technologies: ['React', 'Styled Components', 'TypeScript'],
+        githubLink: 'https://github.com/albertoaraujo-dev/aprimorecomportamental',
+        demoLink: 'https://www.aprimorecomportamental.com.br/',
+        image: '/portfolio/projects/aprimore.png',
+        isPrivateRepo: false,
+      }
   ];
