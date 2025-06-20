@@ -9,6 +9,7 @@ export const projects: Project[] = [
         githubLink: 'https://github.com/albertoaraujo-dev/stanna',
         demoLink: 'https://www.stanna.com.br/',
         image: '/portfolio/projects/stanna.png',
+        isPrivateRepo: false,
       },
       {
         title: 'E-commerce',
@@ -17,6 +18,7 @@ export const projects: Project[] = [
         githubLink: '/',
         demoLink: 'https://www.danfinity.com.br/',
         image: '/portfolio/projects/danfinity.png',
+        isPrivateRepo: true,
       },
       {
         title: 'Portfolio Website',
@@ -25,6 +27,7 @@ export const projects: Project[] = [
         githubLink: 'https://github.com/albertoaraujo-dev/portfolio',
         demoLink: '/portfolio',
         image: '/portfolio/projects/portfolio.png',
+        isPrivateRepo: false,
       },
       {
         title: 'Personal Site',
@@ -33,5 +36,6 @@ export const projects: Project[] = [
         githubLink: 'https://github.com/albertoaraujo-dev/sorayaoliveira',
         demoLink: 'https://www.sorayaoliveira.com.br/',
         image: '/portfolio/projects/soraya.png',
+        isPrivateRepo: false,
       },
   ];

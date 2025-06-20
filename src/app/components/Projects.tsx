@@ -77,17 +77,28 @@ export default function Projects() {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.4 }}
               >
-                <motion.a
-                  href={project.githubLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-secondary hover:text-primary dark:text-slate-400 dark:hover:text-slate-200 transition-colors"
-                  whileHover={{ x: 5 }}
-                  whileTap={{ scale: 0.95 }}
+                {project.isPrivateRepo ? (
+                  <motion.div className='flex items-center gap-2 text-secondary hover:text-primary dark:text-slate-400 dark:hover:text-slate-200 transition-colors'>
+                    <FaGithub className="h-5 w-5" />
+                    <motion.div className="text-secondary dark:text-slate-400 text-xs italic w-20">
+                    <span >
+                        Repositório privado ao proprietário.
+                    </span>
+                    </motion.div>
+                  </motion.div>
+                  
+                ) : (
+                  <motion.a
+                    href={project.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-secondary hover:text-primary dark:text-slate-400 dark:hover:text-slate-200 transition-colors"
+                    whileHover={{ x: 5 }}
+                    whileTap={{ scale: 0.95 }}
                 >
                   <FaGithub className="h-5 w-5" />
                   <span>Code</span>
-                </motion.a>
+                </motion.a>)}
                 <motion.a
                   href={project.demoLink}
                   target="_blank"
