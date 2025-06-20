@@ -5,10 +5,10 @@ import Image from 'next/image';
 import { FaGithub, FaLinkedin, FaFileAlt } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { fadeInUp, fadeIn, scaleIn } from '@/utils/animations';
-import { useTranslations } from 'next-intl'; // Importe useTranslations
+// import { useTranslations } from 'next-intl'; // Importe useTranslations
 
 export default function Hero() {
-    const t = useTranslations('HomePage')
+    // const t = useTranslations('HomePage')
   return (
     <section className="py-20">
       <div className="container max-w-7xl mx-auto px-4">
@@ -32,7 +32,7 @@ export default function Hero() {
               transition={{ delay: 0.8 }}
             >
               Alberto Araujo
-              <p>{t('title')}</p>
+              {/* <p>{t('title')}</p> */}
             </motion.span>
           </motion.h1>
           <motion.p 
