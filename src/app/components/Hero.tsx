@@ -32,7 +32,7 @@ export default function Hero() {
               transition={{ delay: 0.8 }}
             >
               Alberto Araujo
-              <p>{t('title')}</p>
+              {/* <p>{t('title')}</p> */}
             </motion.span>
           </motion.h1>
           <motion.p 
