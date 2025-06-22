@@ -2,11 +2,7 @@
 
 Portfolio website built using Next.js, Tailwind CSS, and Framer Motion. It showcase projects and skills in a visually appealing manner.
 
-## Table of Contents
-
-- [Portfolio](#portfolio)
-  - [Table of Contents](#table-of-contents)
-  - [Features](#features)
+![Preview image for my portfolio](./public/preview.png)
 
 ## Features
 
@@ -14,3 +10,4 @@ Portfolio website built using Next.js, Tailwind CSS, and Framer Motion. It showc
 - Smooth animations with Framer Motion
 - Dark mode support
 - Modular and reusable components
+- Internationalization
