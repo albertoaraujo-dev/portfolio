@@ -5,29 +5,29 @@
         "about": "Sobre",
         "projects": "Projetos",
         "contact": "Contato",
-        "lightMode": "Modo Claro",
-        "darkMode": "Modo Escuro"
+        "light_mode": "Modo Claro",
+        "dark_mode": "Modo Escuro"
       },
       "hero": {
         "title": "Olá, eu sou o",
         "subtitle": "Desenvolvedor Full Stack | Entusiasta UI/UX | Apaixonado por Ensinar",
-        "projectsButton": "Projetos",
-        "contactButton": "Contato"
+        "projects_button": "Projetos",
+        "contact_button": "Contato"
       },
       "projects": {
         "title": "Projetos em Destaque",
         "code": "Código",
-        "liveDemo": "Demonstração",
-        "privateRepoNotice": "Repositório privado do proprietário.",
+        "live_demo": "Demonstração",
+        "private_repo_notice": "Repositório privado do proprietário.",
         "project_stanna_title": "Website de Empresa de Engenharia",
         "project_stanna_description": "Website institucional construído com HTML, CSS e JavaScript",
         "project_danfinity_title": "E-commerce",
         "project_danfinity_description": "Template FrontEnd utilizando Jquery, CSS e HTML para integração com CMS",
-        "project_portfolio_title": "Website de Portfólio",
+        "project_portfolio_title": "Website Portfólio",
         "project_portfolio_description": "Meu website de portfólio pessoal exibindo meus projetos e habilidades.",
-        "project_soraya_title": "Site Pessoal",
-        "project_soraya_description": "Website pessoal para uma psicóloga.",
-        "project_aprimore_title": "Website de Consultório de Psicologia",
+        "project_soraya_title": "Website Pessoal",
+        "project_soraya_description": "Website pessoal personalizado para Psicóloga",
+        "project_aprimore_title": "Website para Consultório de Psicologia",
         "project_aprimore_description": "Website institucional construído com React e Styled Components"
       },
       "footer": {
@@ -71,7 +71,8 @@
       "education_description": "GPA 9,37 - Focado em desenvolvimento de software e web."
     },
     "Projects": {
-
+        "title": "Meus Projetos",
+        "description": "Aqui estão alguns dos meus projetos recentes. Clique nos links para ver o código ou a demonstração ao vivo."
     },
     "Contact": {
 

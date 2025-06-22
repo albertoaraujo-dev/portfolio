@@ -5,20 +5,21 @@
             "about": "About",
             "projects": "Projects",
             "contact": "Contact",
-            "lightMode": "Light Mode",
-            "darkMode": "Dark Mode"
+            "light_mode": "Light Mode",
+            "dark_mode": "Dark Mode"
         },
         "hero": {
             "title": "Hi, I'm",
             "subtitle": "Full Stack Developer | UI/UX Enthusiast | Passionate about Teaching",
-            "projectsButton": "Projects",
-            "contactButton": "Contact"
+            "projects_button": "Projects",
+            "contact_button": "Contact"
+
         },
         "projects": {
             "title": "Featured Projects",
             "code": "Code",
-            "liveDemo": "Live Demo",
-            "privateRepoNotice": "Owner-private repository.",
+            "live_demo": "Live Demo",
+            "private_repo_notice": "Owner-private repository.",
             "project_stanna_title": "Engineering Company Website",
             "project_stanna_description": "Institutional website built with HTML, CSS and JavaScript",
             "project_danfinity_title": "E-commerce",
@@ -26,7 +27,7 @@
             "project_portfolio_title": "Portfolio Website",
             "project_portfolio_description": "My personal portfolio website showcasing my projects and skills.",
             "project_soraya_title": "Personal Site",
-            "project_soraya_description": "Personal website for a psychologist.",
+            "project_soraya_description": "Personal website personalized for a psychologist.",
             "project_aprimore_title": "Psychology Office Website",
             "project_aprimore_description": "Institutional website built React and Styled Components"
         },
@@ -71,7 +72,8 @@
       "education_description": "GPA 9,37 - Focused on software and web development."
     },
     "Projects":{
-
+        "title": "My Projects",
+        "description": "Here are some of my recent projects. Click on the links to view the code or live demo."
     },
     "Contact":{
 
