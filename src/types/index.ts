@@ -1,9 +1,13 @@
 export interface Project {
-  title: string;
-  description: string;
+  id: string  
   technologies: string[];
   githubLink: string;
   demoLink: string;
   image: string;
   isPrivateRepo: boolean;
+}
+
+export interface Experience {
+  id: string;
+  company: string;
 }
