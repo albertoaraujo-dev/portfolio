@@ -1,6 +1,80 @@
 {
-    "HomePage": {
-      "title": "Hello world!",
-      "about": "Go to the about page"
+    "Home": {
+        "navbar": {
+            "home": "Home",
+            "about": "About",
+            "projects": "Projects",
+            "contact": "Contact",
+            "lightMode": "Light Mode",
+            "darkMode": "Dark Mode"
+        },
+        "hero": {
+            "title": "Hi, I'm",
+            "subtitle": "Full Stack Developer | UI/UX Enthusiast | Passionate about Teaching",
+            "projectsButton": "View Projects",
+            "contactButton": "Contact Me"
+        },
+        "projects": {
+            "title": "Featured Projects",
+            "code": "Code",
+            "liveDemo": "Live Demo",
+            "privateRepoNotice": "Owner-private repository.",
+            "project_stanna_title": "Engineering Company Website",
+            "project_stanna_description": "Institutional website built with HTML, CSS and JavaScript",
+            "project_danfinity_title": "E-commerce",
+            "project_danfinity_description": "FrontEnd template using Jquery, CSS and HTML for CMS integration",
+            "project_portfolio_title": "Portfolio Website",
+            "project_portfolio_description": "My personal portfolio website showcasing my projects and skills.",
+            "project_soraya_title": "Personal Site",
+            "project_soraya_description": "Personal website for a psychologist.",
+            "project_aprimore_title": "Psychology Office Website",
+            "project_aprimore_description": "Institutional website built React and Styled Components"
+        },
+        "footer": {
+            "copyright": "All rights reserved"
+        }
+    },
+    "About": {
+      "title": "About",
+      "subtitle": "I'm a passionate Full Stack Developer with expertise in building modern web applications. With a strong foundation in both frontend and backend technologies, I create user experiences and robust server-side solutions.",
+      "skills": "Skills",
+      "tools": "Tools & Others",
+      "experience": "Experience",
+      "experience_freelancer": "Developer and UI/UX Design",
+      "experience_freelancer_date": "2023 - Present",
+      "experience_freelancer_tasks": [
+        "Designed layouts for websites, business cards, posts, and screen prototypes using Figma",
+        "Developed websites using HTML5, CSS, JavaScript, and React",
+        "Integrated jQuery templates with a CMS platform for e-commerce creation and configuration",
+        "Responsible for website hosting and version control using GIT and GitHub"
+      ],
+      "experience_coop": "Full Stack Developer",
+      "experience_coop_date": "2024 - 2024",
+      "experience_coop_tasks": [
+        "Responsible for creating layouts and prototypes for both new and existing screens using Figma",
+        "Refactored screens to implement new designs and functionalities with Bootstrap and PHP",
+        "Resolved tickets involving data entry or corrections directly in the SQL database",
+        "Performed API testing and documentation using Postman",
+        "Managed version control using GIT and GitHub repositories"
+      ],
+      "experience_target": "Junior Systems Analyst",
+      "experience_target_date": "2021 - 2023",
+      "experience_target_tasks": [
+        "Responsible for maintaining the legacy system developed in Centura",
+        "Developed new features and refactored legacy code to C# (.NET) and TypeScript (Angular)",
+        "Created and modified SQL scripts",
+        "Produced documentation related to development tasks'",
+        "Provided Level 2 support and trained new analysts on workflow processes"
+      ],
+      "education": "Education",
+      "education_title": "Bachelor of Information Systems",
+      "education_description": "GPA 9,37 - Focused on software and web development."
+    },
+    "Projects":{
+
+    },
+    "Contact":{
+
     }
+    
 }
