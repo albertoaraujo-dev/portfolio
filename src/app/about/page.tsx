@@ -10,15 +10,22 @@ import {
   cardHover, 
   cardHoverSmall 
 } from '@/utils/animations'
+import { useTranslations } from 'next-intl';
+import { experiences } from '@/contents/experiences';
+
+
 
 export default function About() {
+
+  const t = useTranslations('About');
+
   return (
     <div className="container max-w-7xl mx-auto py-12">
       <motion.h1 
         className="text-4xl font-bold mb-8 text-center text-primary dark:text-slate-200"
         {...fadeInDown}
       >
-        About Me
+        {t('title')}
       </motion.h1>
       
       {/* Bio Section */}
@@ -27,8 +34,7 @@ export default function About() {
         {...fadeInUp}
       >
         <p className="text-lg text-secondary dark:text-slate-400 max-w-3xl mx-auto text-center">
-          I&apos;m a passionate Full Stack Developer with expertise in building modern web applications.
-          With a strong foundation in both frontend and backend technologies, I create user experiences and robust server-side solutions.
+          {t('subtitle')}
         </p>
       </motion.section>
 
@@ -42,7 +48,7 @@ export default function About() {
           className="section-title text-primary dark:text-slate-200"
           {...fadeInUp}
         >
-          Skills
+          {t('skills')}
         </motion.h2>
         <motion.div 
           className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
@@ -62,6 +68,7 @@ export default function About() {
               <li>TypeScript</li>
               <li>Tailwind CSS</li>
               <li>HTML5 / CSS3</li>
+              <li>HTMX</li>
             </ul>
           </motion.div>
           
@@ -77,6 +84,7 @@ export default function About() {
               <li>Express</li>
               <li>PostgreSQL</li>
               <li>MongoDB</li>
+              <li>Django</li>
             </ul>
           </motion.div>
           
@@ -86,12 +94,15 @@ export default function About() {
             {...cardHover}
           >
             <FaGraduationCap className="h-8 w-8 text-primary dark:text-slate-200 mb-4" />
-            <h3 className="text-xl font-semibold text-primary dark:text-slate-200 mb-2">Tools & Others</h3>
+            <h3 className="text-xl font-semibold text-primary dark:text-slate-200 mb-2">
+              {t('tools')}
+            </h3>
             <ul className="text-secondary dark:text-slate-400  space-y-2">
               <li>Git / GitHub</li>
               <li>Docker</li>
               <li>Postman</li>
               <li>CI/CD</li>
+              <li>Figma</li>
             </ul>
           </motion.div>
         </motion.div>
@@ -107,59 +118,39 @@ export default function About() {
           className="section-title text-primary dark:text-slate-200"
           {...fadeInUp}
         >
-          Experience
+          {t('experience')}
         </motion.h2>
+        
         <motion.div 
           className="max-w-3xl mx-auto space-y-8"
           variants={staggerContainer}
           initial="initial"
           animate="animate"
         >
-          <motion.div 
-            className="bg-slate-100 dark:bg-slate-950 p-6 rounded-lg shadow-[0px_0px_8px_0px] shadow-slate-300 dark:shadow-slate-800"
-            variants={fadeInUp}
-            {...cardHoverSmall}
-          >
-            <h3 className="text-xl font-semibold text-primary dark:text-slate-200 mb-2">Developer and UI/UX Design</h3>
-            <p className="text-primary dark:text-slate-200 mb-2">Freelancer • 2022 - Present</p>
-            <ul className="text-secondary dark:text-slate-400 list-disc list-inside space-y-2">
-              <li>Designed layouts for websites, business cards, posts, and screen prototypes using Figma</li>
-              <li>Developed websites using HTML5, CSS, JavaScript, and React</li>
-              <li>Integrated jQuery templates with a CMS platform for e-commerce creation and configuration</li>
-              <li>Responsible for website hosting and version control using GIT and GitHub</li>
-            </ul>
-          </motion.div>
-          
-          <motion.div 
-            className="bg-slate-100 dark:bg-slate-950 p-6 rounded-lg shadow-[0px_0px_8px_0px] shadow-slate-300 dark:shadow-slate-800"
-            variants={fadeInUp}
-            {...cardHoverSmall}
-          >
-            <h3 className="text-xl font-semibold text-primary dark:text-slate-200 mb-2">Full Stack Developer</h3>
-            <p className="text-primary dark:text-slate-200 mb-2">COOP • 2024 - 2024</p>
-            <ul className="text-secondary dark:text-slate-400 list-disc list-inside space-y-2">
-              <li>Responsible for creating layouts and prototypes for both new and existing screens using Figma</li>
-              <li>Refactored screens to implement new designs and functionalities with Bootstrap and PHP</li>
-              <li>Resolved tickets involving data entry or corrections directly in the SQL database</li>
-              <li>Performed API testing and documentation using Postman</li>
-              <li>Managed version control using GIT and GitHub repositories</li>
-            </ul>
-          </motion.div>
-          <motion.div 
-            className="bg-slate-100 dark:bg-slate-950 p-6 rounded-lg shadow-[0px_0px_8px_0px] shadow-slate-300 dark:shadow-slate-800"
-            variants={fadeInUp}
-            {...cardHoverSmall}
-          >
-            <h3 className="text-xl font-semibold text-primary dark:text-slate-200 mb-2">Junior Systems Analyst</h3>
-            <p className="text-primary dark:text-slate-200 mb-2">Target Sistemas • 2021 - 2023</p>
-            <ul className="text-secondary dark:text-slate-400 list-disc list-inside space-y-2">
-              <li>Responsible for maintaining the legacy system developed in Centura</li>
-              <li>Developed new features and refactored legacy code to C# (.NET) and TypeScript (Angular)</li>
-              <li>Created and modified SQL scripts</li>
-              <li>Produced documentation related to development tasks</li>
-              <li>Provided Level 2 support and trained new analysts on workflow processes</li>
-            </ul>
-          </motion.div>
+          {experiences.map((experience) => (
+            <motion.div 
+                key={experience.id}
+                className="bg-slate-100 dark:bg-slate-950 p-6 rounded-lg shadow-[0px_0px_8px_0px] shadow-slate-300 dark:shadow-slate-800"
+                variants={fadeInUp}
+                {...cardHoverSmall}
+            >
+             <h3 className="text-xl font-semibold text-primary dark:text-slate-200 mb-2">
+               {t(`experience_${experience.id}`)}
+             </h3>
+             <p className="text-primary dark:text-slate-200 mb-2">
+               {experience.company} • {t(`experience_${experience.id}_date`)}
+             </p>
+             <ul className="text-secondary dark:text-slate-400 list-disc list-inside space-y-2">
+            
+             {(t.raw(`experience_${experience.id}_tasks`) as string[])
+              .map((task: string, index: number) => (
+                <li key={`${experience.id}-${index}`}>
+                  {task}
+                </li>
+              ))}
+             </ul>
+            </motion.div>
+          ))}
         </motion.div>
       </motion.section>
 
@@ -169,10 +160,10 @@ export default function About() {
         transition={{ delay: 0.6 }}
       >
         <motion.h2 
-          className="section-title"
+          className="section-title text-primary dark:text-slate-200"
           {...fadeInUp}
         >
-          Education
+          {t('education')}
         </motion.h2>
         <motion.div 
           className="max-w-3xl mx-auto"
@@ -185,10 +176,12 @@ export default function About() {
             variants={fadeInUp}
             {...cardHoverSmall}
           >
-            <h3 className="text-xl font-semibold text-primary dark:text-slate-200 mb-2">Bachelor of Information Systems</h3>
+            <h3 className="text-xl font-semibold text-primary dark:text-slate-200 mb-2">
+              {t('education_title')}
+            </h3>
             <p className="text-primary dark:text-slate-200 mb-2">UNESA - Universidade Estácio de Sá • 2020 - 2023</p>
             <p className="text-secondary dark:text-slate-400">
-              GPA 9,37 - Focused on software and web development.
+              {t('education_description')}
             </p>
           </motion.div>
         </motion.div>
