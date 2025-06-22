@@ -9,6 +9,7 @@ import { useTranslations } from 'next-intl'
 
 export default function Projects() {
   const t = useTranslations('Home');
+  const featuredProjects = projects.filter(project => project.isFeatured);
 
   return (
     <section className="pb-20">
@@ -26,7 +27,7 @@ export default function Projects() {
           initial="initial"
           animate="animate"
         >
-          {projects.map((project) => (
+          {featuredProjects.map((project) => (
             <motion.article
               key={project.id}
               className="bg-slate-100 dark:bg-slate-950 rounded-lg shadow-[0px_0px_8px_0px] shadow-slate-300 dark:shadow-slate-800 p-6"

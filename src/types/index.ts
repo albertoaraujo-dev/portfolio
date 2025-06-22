@@ -5,6 +5,7 @@ export interface Project {
   demoLink: string;
   image: string;
   isPrivateRepo: boolean;
+  isFeatured: boolean;
 }
 
 export interface Experience {

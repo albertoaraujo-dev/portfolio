@@ -8,6 +8,7 @@ export const projects: Project[] = [
         demoLink: 'https://www.stanna.com.br/',
         image: '/portfolio/projects/stanna.png',
         isPrivateRepo: false,
+        isFeatured: true,
       },
       {
         id: 'danfinity',
@@ -16,6 +17,7 @@ export const projects: Project[] = [
         demoLink: 'https://www.danfinity.com.br/',
         image: '/portfolio/projects/danfinity.png',
         isPrivateRepo: true,
+        isFeatured: true,
       },
       {
         id: 'portfolio',
@@ -24,6 +26,7 @@ export const projects: Project[] = [
         demoLink: '/portfolio',
         image: '/portfolio/projects/portfolio.png',
         isPrivateRepo: false,
+        isFeatured: false,
       },
       {
         id: 'soraya',
@@ -32,6 +35,7 @@ export const projects: Project[] = [
         demoLink: 'https://www.sorayaoliveira.com.br/',
         image: '/portfolio/projects/soraya.png',
         isPrivateRepo: false,
+        isFeatured: true,
       },
       {
         id: 'aprimore',
@@ -40,5 +44,6 @@ export const projects: Project[] = [
         demoLink: 'https://www.aprimorecomportamental.com.br/',
         image: '/portfolio/projects/aprimore.png',
         isPrivateRepo: false,
+        isFeatured: false,
       }
   ];
