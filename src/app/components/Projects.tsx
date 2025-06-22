@@ -5,8 +5,11 @@ import Image from 'next/image'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 import { fadeInUp, staggerContainer, cardHoverSmall } from '@/utils/animations'
+import { useTranslations } from 'next-intl'
 
 export default function Projects() {
+  const t = useTranslations('Home');
+
   return (
     <section className="pb-20">
       <div className="container max-w-7xl mx-auto px-4">
@@ -14,7 +17,7 @@ export default function Projects() {
           className="text-3xl font-bold mb-12 text-center text-secondary dark:text-slate-200"
           {...fadeInUp}
         >
-          Featured Projects
+          {t('projects.title')}
         </motion.h2>
 
         <motion.div 
@@ -25,7 +28,7 @@ export default function Projects() {
         >
           {projects.map((project) => (
             <motion.article
-              key={project.title}
+              key={project.id}
               className="bg-slate-100 dark:bg-slate-950 rounded-lg shadow-[0px_0px_8px_0px] shadow-slate-300 dark:shadow-slate-800 p-6"
               variants={fadeInUp}
               {...cardHoverSmall}
@@ -33,7 +36,7 @@ export default function Projects() {
               <div className="relative aspect-[1/1.1] mb-4 rounded-lg overflow-hidden">
                 <Image
                   src={project.image}
-                  alt={project.title}
+                  alt={t(`projects.project_${project.id}_title`)}
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -44,7 +47,7 @@ export default function Projects() {
                 whileHover={{ x: 5 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
-                {project.title}
+                {t(`projects.project_${project.id}_title`)}
               </motion.h3>
               <motion.p 
                 className="text-secondary dark:text-slate-400 mb-4"
@@ -52,7 +55,7 @@ export default function Projects() {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.2 }}
               >
-                {project.description}
+                {t(`projects.project_${project.id}_description`)}
               </motion.p>
               <motion.div 
                 className="flex flex-wrap gap-2 mb-4"
@@ -80,9 +83,9 @@ export default function Projects() {
                 {project.isPrivateRepo ? (
                   <motion.div className='flex items-center gap-2 text-secondary hover:text-primary dark:text-slate-400 dark:hover:text-slate-200 transition-colors'>
                     <FaGithub className="h-5 w-5" />
-                    <motion.div className="text-secondary dark:text-slate-400 text-xs italic w-20">
+                    <motion.div className="text-secondary dark:text-slate-400 text-xs italic">
                     <span >
-                        Owner-private repository.
+                        {t('projects.privateRepoNotice')}
                     </span>
                     </motion.div>
                   </motion.div>
@@ -97,7 +100,7 @@ export default function Projects() {
                     whileTap={{ scale: 0.95 }}
                 >
                   <FaGithub className="h-5 w-5" />
-                  <span>Code</span>
+                  <span>{t('projects.code')}</span>
                 </motion.a>)}
                 <motion.a
                   href={project.demoLink}
@@ -108,7 +111,7 @@ export default function Projects() {
                   whileTap={{ scale: 0.95 }}
                 >
                   <FaExternalLinkAlt className="h-5 w-5" />
-                  <span>Live Demo</span>
+                  <span>{t('projects.liveDemo')}</span>
                 </motion.a>
               </motion.div>
             </motion.article>
