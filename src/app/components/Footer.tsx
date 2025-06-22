@@ -1,7 +1,11 @@
+'use client'
+
 import Link from 'next/link'
 import { FaGithub, FaLinkedin, FaFileAlt } from 'react-icons/fa'
+import { useTranslations } from 'next-intl';
 
 export default function Footer() {
+    const t = useTranslations('Home')
   return (
     <footer className="bg-slate-100 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800">
       <div className="container max-w-7xl mx-auto px-4 py-8">
@@ -11,7 +15,7 @@ export default function Footer() {
               Alberto Araujo
             </Link>
             <p className="text-sm text-secondary dark:text-slate-400 mt-2">
-              © {new Date().getFullYear()} Alberto Araujo. All rights reserved.
+              © {new Date().getFullYear()} Alberto Araujo. {t('footer.copyright')}
             </p>
           </div>
           
