@@ -115,12 +115,12 @@ export default function Navbar() {
                     {theme === 'dark' ? (
                       <>
                         <SunIcon className="h-5 w-5 mr-2" />
-                        {t('navbar.lightMode')}
+                        {t('navbar.light_mode')}
                       </>
                     ) : (
                       <>
                         <MoonIcon className="h-5 w-5 mr-2" />
-                        {t('navbar.darkMode')}
+                        {t('navbar.dark_mode')}
                       </>
                     )}
                   </button>

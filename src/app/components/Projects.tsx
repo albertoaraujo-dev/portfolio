@@ -85,7 +85,7 @@ export default function Projects() {
                     <FaGithub className="h-5 w-5" />
                     <motion.div className="text-secondary dark:text-slate-400 text-xs italic">
                     <span >
-                        {t('projects.privateRepoNotice')}
+                        {t('projects.private_repo_notice')}
                     </span>
                     </motion.div>
                   </motion.div>
@@ -111,7 +111,7 @@ export default function Projects() {
                   whileTap={{ scale: 0.95 }}
                 >
                   <FaExternalLinkAlt className="h-5 w-5" />
-                  <span>{t('projects.liveDemo')}</span>
+                  <span>{t('projects.live_demo')}</span>
                 </motion.a>
               </motion.div>
             </motion.article>

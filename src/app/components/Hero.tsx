@@ -93,7 +93,7 @@ export default function Hero() {
                 href="/projects"
                 className="bg-slate-700 hover:bg-slate-800 dark:bg-slate-800 hover:dark:bg-slate-700 inline-block w-full md:w-auto text-slate-100 px-8 py-3 rounded-lg  transition-colors"
               >
-                {t('hero.projectsButton')}
+                {t('hero.projects_button')}
               </Link>
             </motion.div>
             <motion.div
@@ -104,7 +104,8 @@ export default function Hero() {
                 href="/contact"
                 className=" inline-block w-full bg-slate-700 hover:bg-slate-800 dark:bg-slate-800 hover:dark:bg-slate-700 md:w-auto text-slate-100 dark:text-slate-100 px-8 py-3 rounded-lg transition-colors"
               >
-                {t('hero.contactButton')}
+                {t('hero.contact_button')}
+
               </Link>
             </motion.div>
           </motion.div>
