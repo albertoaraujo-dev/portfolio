@@ -21,15 +21,15 @@
             "live_demo": "Live Demo",
             "private_repo_notice": "Owner-private repository.",
             "project_stanna_title": "Engineering Company Website",
-            "project_stanna_description": "Institutional website built with HTML, CSS and JavaScript",
+            "project_stanna_description": "Company website with information about the business and its services.",
             "project_danfinity_title": "E-commerce",
-            "project_danfinity_description": "FrontEnd template using Jquery, CSS and HTML for CMS integration",
+            "project_danfinity_description": "FrontEnd template for CMS integration, banners design and products catalog.",
             "project_portfolio_title": "Portfolio Website",
             "project_portfolio_description": "My personal portfolio website showcasing my projects and skills.",
             "project_soraya_title": "Personal Site",
-            "project_soraya_description": "Personal website personalized for a psychologist.",
+            "project_soraya_description": "Personalized website for a psychologist.",
             "project_aprimore_title": "Psychology Office Website",
-            "project_aprimore_description": "Institutional website built React and Styled Components"
+            "project_aprimore_description": "Institutional website with clinic end its team"
         },
         "footer": {
             "copyright": "All rights reserved"
@@ -76,7 +76,16 @@
         "description": "Here are some of my recent projects. Click on the links to view the code or live demo."
     },
     "Contact":{
-
-    }
-    
+        "title": "Contact Me",
+        "subtitle": "Get in Touch",
+        "description": "I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.",
+        "phone": "Phone",
+        "location": "Location",
+        "name": "Name",
+        "message": "Message",
+        "sending": "Sending...",
+        "send": "Send Message",
+        "sent": "Message sent successfully!",
+        "failed": "Failed to send message. Please try again."
+    } 
 }

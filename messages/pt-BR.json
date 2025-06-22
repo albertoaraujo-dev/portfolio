@@ -9,7 +9,7 @@
         "dark_mode": "Modo Escuro"
       },
       "hero": {
-        "title": "Olá, eu sou o",
+        "title": "Olá, eu sou",
         "subtitle": "Desenvolvedor Full Stack | Entusiasta UI/UX | Apaixonado por Ensinar",
         "projects_button": "Projetos",
         "contact_button": "Contato"
@@ -20,15 +20,15 @@
         "live_demo": "Demonstração",
         "private_repo_notice": "Repositório privado do proprietário.",
         "project_stanna_title": "Website de Empresa de Engenharia",
-        "project_stanna_description": "Website institucional construído com HTML, CSS e JavaScript",
+        "project_stanna_description": "Website institucional para informações sobre a empresa e serviços",
         "project_danfinity_title": "E-commerce",
-        "project_danfinity_description": "Template FrontEnd utilizando Jquery, CSS e HTML para integração com CMS",
+        "project_danfinity_description": "Template de Front-end para integração com CMS, design de banners e catálogo de produtos.",
         "project_portfolio_title": "Website Portfólio",
         "project_portfolio_description": "Meu website de portfólio pessoal exibindo meus projetos e habilidades.",
         "project_soraya_title": "Website Pessoal",
-        "project_soraya_description": "Website pessoal personalizado para Psicóloga",
+        "project_soraya_description": "Website personalizado para uma Psicóloga",
         "project_aprimore_title": "Website para Consultório de Psicologia",
-        "project_aprimore_description": "Website institucional construído com React e Styled Components"
+        "project_aprimore_description": "Website institucional com informações sobre o consultório e profissionais"
       },
       "footer": {
         "copyright": "Todos os direitos reservados"
@@ -75,6 +75,16 @@
         "description": "Aqui estão alguns dos meus projetos recentes. Clique nos links para ver o código ou a demonstração ao vivo."
     },
     "Contact": {
-
+        "title": "Fale Comigo",
+        "subtitle": "Entre em Contato",
+        "description": "Estou sempre a disposição para discutir novos projetos, ideias criativas ou oportunidades para fazer parte das suas visões.",
+        "phone": "Telefone",
+        "location": "Localização",
+        "name": "Nome",
+        "message": "Mensagem",
+        "sending": "Enviando...",
+        "send": "Enviar Mensagem",
+        "sent": "Mensagem enviada com sucesso!",
+        "failed": "Falha ao enviar mensagem. Por favor, tente novamente."
     }
   }

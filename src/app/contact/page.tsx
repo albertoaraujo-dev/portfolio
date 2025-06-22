@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { FaEnvelope, FaWhatsapp, FaMapMarkerAlt } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 import { fadeInUp, fadeIn, slideInLeft, slideInRight } from '@/utils/animations'
+import { useTranslations } from 'next-intl'
 
 interface FormData {
   name: string;
@@ -14,6 +15,9 @@ interface FormData {
 type FormStatus = 'idle' | 'loading' | 'success' | 'error';
 
 export default function Contact() {
+
+  const t = useTranslations('Contact')
+
   const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
@@ -58,7 +62,7 @@ export default function Contact() {
         className="text-4xl font-bold mb-8 text-center text-primary dark:text-slate-200"
         {...fadeInUp}
       >
-        Contact Me
+        {t('title')}
       </motion.h1>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -68,10 +72,11 @@ export default function Contact() {
           {...slideInLeft}
         >
           <motion.div {...fadeInUp}>
-            <h2 className="text-2xl font-semibold mb-4 text-primary dark:text-slate-200">Get in Touch</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-primary dark:text-slate-200">
+              {t('subtitle')}
+            </h2>
             <p className="text-secondary dark:text-slate-400">
-              I&apos;m always open to discussing new projects, creative ideas, or
-              opportunities to be part of your visions.
+              {t('description')}
             </p>
           </motion.div>
           
@@ -104,7 +109,9 @@ export default function Contact() {
             >
               <FaWhatsapp className="h-6 w-6 text-secondary dark:text-slate-200" />
               <div>
-                <h3 className="font-semibold text-secondary dark:text-slate-200">Phone</h3>
+                <h3 className="font-semibold text-secondary dark:text-slate-200">
+                  {t('phone')}
+                </h3>
                 <a href="tel:+1234567890" className="text-secondary hover:text-dark dark:text-slate-400 dark:hover:text-slate-200">
                   +55 (11) 95366-8691
                 </a>
@@ -119,7 +126,9 @@ export default function Contact() {
             >
               <FaMapMarkerAlt className="h-6 w-6 text-secondary dark:text-slate-200" />
               <div>
-                <h3 className="font-semibold text-secondary dark:text-slate-200">Location</h3>
+                <h3 className="font-semibold text-secondary dark:text-slate-200">
+                  {t('location')}
+                </h3>
                 <p className="text-secondary dark:text-slate-400 dark:hover:text-slate-200">São Bernardo do Campo, SP</p>
               </div>
             </motion.div>
@@ -140,7 +149,7 @@ export default function Contact() {
           >
             <motion.div variants={fadeInUp}>
               <label htmlFor="name" className="block text-sm font-medium mb-2 text-primary dark:text-slate-300">
-                Name
+                {t('name')}
               </label>
               <input
                 type="text"
@@ -170,7 +179,7 @@ export default function Contact() {
             
             <motion.div variants={fadeInUp}>
               <label htmlFor="message" className="block text-sm font-medium mb-2 dark:text-slate-300">
-                Message
+                {t('message')}
               </label>
               <textarea
                 id="message"
@@ -190,7 +199,7 @@ export default function Contact() {
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
-              {status === 'loading' ? 'Sending...' : 'Send Message'}
+              {status === 'loading' ? t('sending') : t('send')}
             </motion.button>
             
             {status === 'success' && (
@@ -199,7 +208,7 @@ export default function Contact() {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
               >
-                Message sent successfully!
+                {t('sent')}
               </motion.p>
             )}
             
@@ -209,7 +218,7 @@ export default function Contact() {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
               >
-                Failed to send message. Please try again.
+                {t('failed')}
               </motion.p>
             )}
           </motion.form>
