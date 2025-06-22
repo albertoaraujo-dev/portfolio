@@ -11,8 +11,8 @@
         "hero": {
             "title": "Hi, I'm",
             "subtitle": "Full Stack Developer | UI/UX Enthusiast | Passionate about Teaching",
-            "projectsButton": "View Projects",
-            "contactButton": "Contact Me"
+            "projectsButton": "Projects",
+            "contactButton": "Contact"
         },
         "projects": {
             "title": "Featured Projects",

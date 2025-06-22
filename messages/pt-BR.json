@@ -1,6 +1,79 @@
 {
-    "HomePage": {
-      "title": "Olá Mundo!",
-      "about": "Vai para a página Sobre"
+    "Home": {
+      "navbar": {
+        "home": "Início",
+        "about": "Sobre",
+        "projects": "Projetos",
+        "contact": "Contato",
+        "lightMode": "Modo Claro",
+        "darkMode": "Modo Escuro"
+      },
+      "hero": {
+        "title": "Olá, eu sou o",
+        "subtitle": "Desenvolvedor Full Stack | Entusiasta UI/UX | Apaixonado por Ensinar",
+        "projectsButton": "Projetos",
+        "contactButton": "Contato"
+      },
+      "projects": {
+        "title": "Projetos em Destaque",
+        "code": "Código",
+        "liveDemo": "Demonstração",
+        "privateRepoNotice": "Repositório privado do proprietário.",
+        "project_stanna_title": "Website de Empresa de Engenharia",
+        "project_stanna_description": "Website institucional construído com HTML, CSS e JavaScript",
+        "project_danfinity_title": "E-commerce",
+        "project_danfinity_description": "Template FrontEnd utilizando Jquery, CSS e HTML para integração com CMS",
+        "project_portfolio_title": "Website de Portfólio",
+        "project_portfolio_description": "Meu website de portfólio pessoal exibindo meus projetos e habilidades.",
+        "project_soraya_title": "Site Pessoal",
+        "project_soraya_description": "Website pessoal para uma psicóloga.",
+        "project_aprimore_title": "Website de Consultório de Psicologia",
+        "project_aprimore_description": "Website institucional construído com React e Styled Components"
+      },
+      "footer": {
+        "copyright": "Todos os direitos reservados"
+      }
+    },
+    "About": {
+      "title": "Sobre",
+      "subtitle": "Sou um Desenvolvedor Full Stack apaixonado, com experiência em construir aplicações web modernas. Com uma base sólida tanto em tecnologias frontend quanto backend, eu crio experiências de usuário imersivas e soluções robustas do lado do servidor.",
+      "skills": "Habilidades",
+      "tools": "Ferramentas & Outros",
+      "experience": "Experiência",
+      "experience_freelancer": "Desenvolvedor e Designer UI/UX",
+      "experience_freelancer_date": "2023 - Atualmente",
+      "experience_freelancer_tasks": [
+        "Criação de layouts para websites, cartões de visita, posts e protótipos de telas usando Figma",
+        "Desenvolvimento de websites utilizando HTML5, CSS, JavaScript e React",
+        "Integração de templates jQuery com plataforma CMS para criação e configuração de e-commerce",
+        "Responsável pela hospedagem de websites e controle de versão usando GIT e GitHub"
+      ],
+      "experience_coop": "Desenvolvedor Full Stack",
+      "experience_coop_date": "2024 - 2024",
+      "experience_coop_tasks": [
+        "Responsável pela criação de layouts e protótipos para telas novas e existentes usando Figma",
+        "Refatoração de telas para implementar novos designs e funcionalidades com Bootstrap e PHP",
+        "Resolução de tickets envolvendo entrada ou correção de dados diretamente no banco de dados SQL",
+        "Realização de testes e documentação de API utilizando Postman",
+        "Gerenciamento de controle de versão usando GIT e repositórios GitHub"
+      ],
+      "experience_target": "Analista de Sistemas Júnior",
+      "experience_target_date": "2021 - 2023",
+      "experience_target_tasks": [
+        "Responsável pela manutenção do sistema legado desenvolvido em Centura",
+        "Desenvolvimento de novas funcionalidades e refatoração de código legado para C# (.NET) e TypeScript (Angular)",
+        "Criação e modificação de scripts SQL",
+        "Elaboração de documentação relacionada às tarefas de desenvolvimento",
+        "Prestação de suporte Nível 2 e treinamento de novos analistas nos processos de fluxo de trabalho"
+      ],
+      "education": "Educação",
+      "education_title": "Bacharelado em Sistemas de Informação",
+      "education_description": "GPA 9,37 - Focado em desenvolvimento de software e web."
+    },
+    "Projects": {
+
+    },
+    "Contact": {
+
     }
-}
+  }
