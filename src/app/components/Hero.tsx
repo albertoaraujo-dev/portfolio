@@ -5,10 +5,10 @@ import Image from 'next/image';
 import { FaGithub, FaLinkedin, FaFileAlt } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { fadeInUp, fadeIn, scaleIn } from '@/utils/animations';
-// import { useTranslations } from 'next-intl'; // Importe useTranslations
+import { useTranslations } from 'next-intl';
 
 export default function Hero() {
-    // const t = useTranslations('HomePage')
+    const t = useTranslations('Home')
   return (
     <section className="py-20">
       <div className="container max-w-7xl mx-auto px-4">
@@ -26,7 +26,8 @@ export default function Hero() {
             {...fadeInUp}
             transition={{ delay: 0.3 }}
           >
-            Hi, I&apos;m <motion.span 
+            {t('hero.title')} <motion.span 
+
               className="text-primary dark:text-slate-100"
               {...fadeIn}
               transition={{ delay: 0.8 }}
@@ -40,7 +41,7 @@ export default function Hero() {
             {...fadeInUp}
             transition={{ delay: 0.4 }}
           >
-            Full Stack Developer | UI/UX Enthusiast | Passionate about Teaching
+            {t('hero.subtitle')}
           </motion.p>
           <motion.div 
             className="flex justify-center space-x-4 mb-8"
@@ -92,7 +93,7 @@ export default function Hero() {
                 href="/projects"
                 className="bg-slate-700 hover:bg-slate-800 dark:bg-slate-800 hover:dark:bg-slate-700 inline-block w-full md:w-auto text-slate-100 px-8 py-3 rounded-lg  transition-colors"
               >
-                View Projects
+                {t('hero.projectsButton')}
               </Link>
             </motion.div>
             <motion.div
@@ -103,7 +104,7 @@ export default function Hero() {
                 href="/contact"
                 className=" inline-block w-full bg-slate-700 hover:bg-slate-800 dark:bg-slate-800 hover:dark:bg-slate-700 md:w-auto text-slate-100 dark:text-slate-100 px-8 py-3 rounded-lg transition-colors"
               >
-                Contact Me
+                {t('hero.contactButton')}
               </Link>
             </motion.div>
           </motion.div>
