@@ -28,12 +28,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-    <body className={`bg-slate-100 transition-colors dark:bg-slate-950 dark:text-slate-100 ${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`bg-slate-100 transition-colors dark:bg-slate-950 dark:text-slate-100 ${geistSans.variable} ${geistMono.variable}`}>
         <ThemeProvider>
-            <LanguageProvider>
+          <LanguageProvider>
             <Navbar />
             <main className="min-h-screen pt-24">
-            {children}
+              {children}
             </main>
             <Footer />
           </LanguageProvider>
