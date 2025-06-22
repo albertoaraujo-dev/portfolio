@@ -5,20 +5,22 @@ import { useTheme } from '../context/ThemeContext'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useState } from 'react'
 import LanguageSwitcher from './LanguageSwitcher';
+import { useTranslations } from 'next-intl';
 
 export default function Navbar() {
   const { theme, toggleTheme } = useTheme();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const t = useTranslations('Home')
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
   const menuItems = [
-    { href: '/', label: 'Home' },
-    { href: '/about', label: 'About' },
-    { href: '/projects', label: 'Projects' },
-    { href: '/contact', label: 'Contact' },
+    { href: '/', label: t('navbar.home') },
+    { href: '/about', label: t('navbar.about') },
+    { href: '/projects', label: t('navbar.projects') },
+    { href: '/contact', label: t('navbar.contact') },
   ];
 
   return (
@@ -113,12 +115,12 @@ export default function Navbar() {
                     {theme === 'dark' ? (
                       <>
                         <SunIcon className="h-5 w-5 mr-2" />
-                        Light Mode
+                        {t('navbar.lightMode')}
                       </>
                     ) : (
                       <>
                         <MoonIcon className="h-5 w-5 mr-2" />
-                        Dark Mode
+                        {t('navbar.darkMode')}
                       </>
                     )}
                   </button>
