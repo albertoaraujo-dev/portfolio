@@ -12,7 +12,7 @@ export default function Projects() {
   const featuredProjects = projects.filter(project => project.isFeatured);
 
   return (
-    <section className="pb-20">
+    <section className="pb-10 md:pb-20">
       <div className="container max-w-7xl mx-auto px-4">
         <motion.h2 
           className="text-3xl font-bold mb-12 text-center text-secondary dark:text-slate-200"
@@ -41,6 +41,7 @@ export default function Projects() {
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  priority
                 />
               </div>
               <motion.h3 
